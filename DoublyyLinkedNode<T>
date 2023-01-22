@@ -1,0 +1,39 @@
+///////////////////////Node Class//////////////////////////
+	class DoubleLinearNode<T> {
+	    private DoubleLinearNode<T> next;
+	    private DoubleLinearNode<T> previous;
+	    private T element;
+	 
+	    public DoubleLinearNode(){
+	        next = null;
+	        previous = null; 
+	        element = null;
+	    }
+	 
+	    public DoubleLinearNode(T elem) {
+	        next = null;
+	        previous = null;
+	        element = elem;
+	    }
+	 
+	    public DoubleLinearNode<T> getNext() {
+	        return next;
+	    }
+	    public DoubleLinearNode<T> getPrevious() {
+	        return previous;
+	    }
+	 
+	    public void setNext(DoubleLinearNode<T> node) {
+	        next = node;
+	    }
+	    public void setPrevious(DoubleLinearNode<T> node) {
+	        previous = node;
+	    }
+	    public T getElement() {
+	        return element;
+	    }
+	 
+	    public void setElement(T elem) {
+	        element = elem;
+	    }
+	}
